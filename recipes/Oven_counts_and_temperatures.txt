@@ -1,0 +1,51 @@
+Oven_counts_and_temperatures
+
+
+Counts
+
+Degrees Fahrenheit
+
+Common name for
+oven temperature
+
+8
+
+450 to 500
+
+Hot.
+
+Quick.
+
+Medium.
+
+Moderate.
+
+Slow.
+
+9 to 12
+
+400 to 450
+
+12 to 16
+
+325 to 400
+
+16 to .18
+
+250 to 325
+
+18 to 20
+
+200 to 250
+
+
+
+Note. g It must be remembered that an oven count will vary according to the
+individual and also vary as the hand of the person making the count is sensi-
+tive or insensitive to heat. This is affected by the occupation of the man making
+the count. Cooks and others accustomed to working in heat are able to keep
+their hands in a hot oven longer than persons not accustomed to heat. There-
+fore, the only absolutely accurate method of determining oven temperature is
+by a thermometer. However, if no thermometer is available, the hand-second
+method will give fairly satisfactory results.
+
