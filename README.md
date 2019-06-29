@@ -22,6 +22,10 @@ Army Cook Bot
 ## Version
 * Version 0.0.1
 
+## Dev Links
+* [Tweepy Docs](http://docs.tweepy.org/en/latest/api.html)
+* [Docker python](https://docs.docker.com/samples/library/python/)
+
 ## Contact
 #### Travis Shears
 * Homepage: [personal site](https://travisshears.com)

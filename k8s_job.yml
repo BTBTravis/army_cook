@@ -1,0 +1,33 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: armycookbot
+spec:
+  template:
+    spec:
+      containers:
+      - name: armycookbot
+        image: registry.gitlab.com/btbtravis/army-cook:0.0.1
+        env:
+        - name: CONSUMER_KEY
+          valueFrom:
+            configMapKeyRef:
+              key: CONSUMER_KEY
+              name: armycook-config
+        - name: CONSUMER_SECRET
+          valueFrom:
+            configMapKeyRef:
+              key: CONSUMER_SECRET
+              name: armycook-config
+        - name: ACCESS_TOKEN
+          valueFrom:
+            configMapKeyRef:
+              key: ACCESS_TOKEN
+              name: armycook-config
+        - name: ACCESS_TOKEN_SECRET
+          valueFrom:
+            configMapKeyRef:
+              key: ACCESS_TOKEN_SECRET
+              name: armycook-config
+      restartPolicy: Never
+  backoffLimit: 4
