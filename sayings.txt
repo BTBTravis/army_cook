@@ -1,0 +1,6 @@
+Finished setting up the mess hall? Take $body and make some $title
+When defining a meal plan with $title you'll need $body
+Good nutrition wins wars take $body and make $title
+All your cuts no matter how slight have bee treated? Good, gather $body and make $title
+Soldiers tired of field rations? $body will make $title
+Finished assembling the range? $body will make $title
