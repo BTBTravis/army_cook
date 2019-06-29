@@ -5,6 +5,7 @@ use warnings;
 
 #my $filename = 'data.txt';
 my @recipes;
+my $i = 0;
 
 while (<>) {
     my $txt = $_;
@@ -15,12 +16,13 @@ while (<>) {
 	    my $fname = $recipes[0];
 	    $fname =~ s/\n//g;
 	    mkdir $existingdir unless -d $existingdir; # Check if dir exists. If not create it.
-	    open my $fileHandle, ">>", "$existingdir/$fname.txt" or die "Can't open '$existingdir/$fname.txt'\n";
+	    open my $fileHandle, ">>", "$existingdir/$i-a.txt" or die "Can't open '$existingdir/$fname.txt'\n";
 	    foreach (@recipes) {
 		print $fileHandle $_;
 	    }
 	    close $fileHandle;
             @recipes = ();
+            $i++;
         }
 
         chomp $txt;
