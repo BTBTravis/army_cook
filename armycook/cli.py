@@ -4,20 +4,46 @@ import os
 import datetime
 import json
 import random
+import tweepy
+
 
 @click.command()
 def cli():
     """Tweet"""
-    # files = [f for f in glob.glob(path + "**/*.txt", recursive=True)]
+    new_tweet = get_new_tweet()
+    latest_tweet = get_latest_tweet()
+    if (new_tweet[:50] == latest_tweet[:50]):
+        raise  click.UsageError("Trying to tweet same as latest tweet... Nope")
+    else:
+        click.echo('Sending new tweet: {}'.format(new_tweet))
+        send_tweet(new_tweet)
+
+def get_latest_tweet():
+    api = get_twitter_api()
+    tweets = api.home_timeline()
+    return tweets[0].text
+
+def get_twitter_api():
+    auth = tweepy.OAuthHandler(os.environ['CONSUMER_KEY'], os.environ['CONSUMER_SECRET'])
+    auth.set_access_token(os.environ['ACCESS_TOKEN'], os.environ['ACCESS_TOKEN_SECRET'])
+    return tweepy.API(auth)
+
+def send_tweet(txt):
+    api = get_twitter_api()
+    api.update_status(txt)
+
+def get_new_tweet():
     og_date_parts = os.environ['ORIGIN_DATE'].split(',')
     og_date_parts = list(map(lambda x: int(x), og_date_parts)) # string --> int
     og_date = datetime.datetime(og_date_parts[0], og_date_parts[1], og_date_parts[2])
-    # click.echo(json.dumps(og_date.year))
-    click.echo(json.dumps(get_tweets()))
+    now = datetime.datetime.now()
+    delta = now - og_date
+    return get_tweets(delta.days)[delta.days]
 
-def get_tweets():
+def get_tweets(sd):
     master_txt = load_master_txt()
     sayings = load_sayings()
+    random.seed(sd)
     get_random_saying = lambda: random.choice(sayings)
     return list(map(lambda x: get_tweet(x, get_random_saying), master_txt))
 
@@ -25,6 +51,8 @@ def get_tweet(txt, sayingFn):
     tweet = sayingFn()
     tweet = tweet.replace("$body", txt['body'])
     tweet = tweet.replace("$title", txt['title'])
+    tweet = tweet + "\n\nsource: https://archive.org/details/1942TM10-405/"
+
     if(len(tweet) > 280):
         return get_tweet(txt, sayingFn)
     return tweet
