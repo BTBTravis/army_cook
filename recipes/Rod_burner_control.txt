@@ -1,3 +1,0 @@
-Rod_burner_control
-! 2. Valve, air.
-

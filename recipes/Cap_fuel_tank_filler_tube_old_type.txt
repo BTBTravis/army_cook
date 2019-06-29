@@ -1,6 +1,0 @@
-Cap_fuel_tank_filler_tube_old_type
-
-102- B. Cap, fuel tank filler tube, new type.
-
-103- B. Valve, fuel tank filler tube cap.
-
