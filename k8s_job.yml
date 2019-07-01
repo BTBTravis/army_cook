@@ -7,7 +7,7 @@ spec:
     spec:
       containers:
       - name: armycookbot
-        image: registry.gitlab.com/btbtravis/army-cook:0.0.1
+        image: registry.gitlab.com/btbtravis/army-cook:0.0.3
         env:
         - name: CONSUMER_KEY
           valueFrom:

@@ -13,7 +13,7 @@ def cli():
     new_tweet = get_new_tweet()
     latest_tweet = get_latest_tweet()
     if (new_tweet[:50] == latest_tweet[:50]):
-        raise  click.UsageError("Trying to tweet same as latest tweet... Nope")
+        click.echo('Trying to tweet same as latest tweet... Nope')
     else:
         click.echo('Sending new tweet: {}'.format(new_tweet))
         send_tweet(new_tweet)
