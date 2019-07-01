@@ -19,8 +19,8 @@ Army Cook Bot
 ## License
 * see [LICENSE](https://github.com/BTBTravis/army_cook/blob/master/LICENCE.md) file
 
-## Version
-* Version 0.0.1
+## Current Version
+* [v0.0.3](https://github.com/BTBTravis/army_cook/releases/tag/v0.0.3)
 
 ## Dev Links
 * [Tweepy Docs](http://docs.tweepy.org/en/latest/api.html)
