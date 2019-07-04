@@ -11,16 +11,14 @@ Army Cook Bot
 ## Inspiration
 * https://www.are.na/travis-shears/twitter-bots
 
-
 ## Sources
 * https://archive.org/details/1942TM10-405
-
 
 ## License
 * see [LICENSE](https://github.com/BTBTravis/army_cook/blob/master/LICENCE.md) file
 
 ## Current Version
-* [v0.0.3](https://github.com/BTBTravis/army_cook/releases/tag/v0.0.3)
+* [v0.0.4](https://github.com/BTBTravis/army_cook/releases/tag/v0.0.3)
 
 ## Dev Links
 * [Tweepy Docs](http://docs.tweepy.org/en/latest/api.html)

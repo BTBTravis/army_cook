@@ -4,3 +4,12 @@ Good nutrition wins wars take $body and make $title
 All your cuts no matter how slight have bee treated? Good, gather $body and make $title
 Soldiers tired of field rations? $body will make $title
 Finished assembling the range? $body will make $title
+Good nutrition wins wars. Take some $body and make $title
+As log as $body were stored properly make some $title
+High altitude missions require good food. Take $body and make $title
+Try $title when you have $body
+Don't let soldiers go hungry, they will like $title provided you have $body
+It only takes $body to make $title
+In WWII $title was a popular dish with soldiers. Ingredients: $body
+$title is a nice break from C and K rations. Ingredients: $body
+$title was made by army cooks in WWII. Ingredients: $body

@@ -85,3 +85,39 @@ Oxtail soup
 --
 Potato soup
 10 pounds potatoes, 2 pounds fat/butter, 7 gallons beef stock, 1 pound flour (browned in fat), 2 pounds onions, and 2 cans milk
+--
+Puree of beans
+5 pounds dry beans and 2 pounds fat
+--
+Puree of carrots
+17 pounds of diced carrots braised and 2 pounds fat
+--
+Puree of lima beans
+5 pounds of dry lima beans and 2 pounds fat
+--
+Puree of potatoes
+10 pounds potatoes, 2 pounds fat, 7 gallons beef stock, 1 pound fiour, and 2 pounds bacon
+--
+Puree of split peas
+5 pounds of split dried peas and 2 pounds fat
+--
+Rice soup
+3 pounds rice, 2 pounds bacon, and 1 pound onions
+--
+Split pea soup
+7 pounds split peas, 7 gallons beef stock, and 2 pounds bacon
+--
+Tomato soup
+12 pounds fresh tomatoes, 2 pounds flour, 1 pound suger, 5 gallons beef stock, and 2 pounds bacon
+--
+Tomato and rice soup
+3 cans tomatoes, 6 gallons beef stock, and 2 pounds rice
+--
+Vegetable soup
+2 pounds cabbage, 1 pound rice, 1 pound onions, 7 gallons beef stock, 2 pounds potatoes 2 pounds celery
+--
+Bacon, fried
+22 pounds bacon
+--
+Bacon, simmered
+22 pounds bacon
