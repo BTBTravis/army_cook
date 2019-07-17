@@ -60,7 +60,7 @@ def get_tweet(txt, sayingFn):
 
 def load_master_txt():
     """Load file containing text parts to be used in tweet"""
-    txt_file  = open("/army/master.txt", "r")
+    txt_file  = open("/txts/master/master.txt", "r")
     txt = txt_file.read()
     txt_parts = txt.split('--')
     split_on_newline = lambda l: l.split("\n")

@@ -7,7 +7,10 @@ spec:
     spec:
       containers:
       - name: armycookbot
-        image: registry.gitlab.com/btbtravis/army-cook:0.0.3
+        image: registry.gitlab.com/btbtravis/army-cook:0.0.5.alpha.1
+        volumeMounts:
+        - name: master-txt-volume
+          mountPath: /txts/master
         env:
         - name: CONSUMER_KEY
           valueFrom:
@@ -30,4 +33,8 @@ spec:
               key: ACCESS_TOKEN_SECRET
               name: armycook-config
       restartPolicy: Never
+      volumes:
+      - name: master-txt-volume
+        configMap:
+          name: master-txt
   backoffLimit: 4
