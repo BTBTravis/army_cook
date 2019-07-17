@@ -20,6 +20,10 @@ Army Cook Bot
 ## Current Version
 * [v0.0.4](https://github.com/BTBTravis/army_cook/releases/tag/v0.0.3)
 
+## Dev
+**Update master.txt k8s config map:**
+`$ kubectl create configmap master-txt --from-file ./master.txt --namespace armycook`
+
 ## Dev Links
 * [Tweepy Docs](http://docs.tweepy.org/en/latest/api.html)
 * [Docker python](https://docs.docker.com/samples/library/python/)
