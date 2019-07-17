@@ -1,0 +1,9 @@
+apiVersion: v1
+data:
+  CONSUMER_KEY: xxxxxxxxxxxxxxxxxxxxxxxxx
+  CONSUMER_SECRET: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  ACCESS_TOKEN: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  ACCESS_TOKEN_SECRET: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+kind: ConfigMap
+metadata:
+  name: armycook-config

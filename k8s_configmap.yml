@@ -1,9 +1,0 @@
-apiVersion: v1
-data:
-  CONSUMER_KEY: caR5J7bOecUivabUKZhZkx3FN
-  CONSUMER_SECRET: xr3xhJpbV6gmAFnF3XIB2Q4wtfGeJcOWZMsgWQwuc9KjJRpdGJ
-  ACCESS_TOKEN: 1138740504655532032-sC0ofiziGEiQnVASDZAYoOPa4pL4vA
-  ACCESS_TOKEN_SECRET: IUtSe8I6aS0itpa4B0k3chZ6Bf317isa79qF8txuHBKmE
-kind: ConfigMap
-metadata:
-  name: armycook-config
