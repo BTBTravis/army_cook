@@ -57,3 +57,54 @@ Hamburger Beefsteak
 --
 Beefsteak and mushrooms
 60 lbs beef, 2 lbs flour, 6 cans mushrooms, 2 lbs butter
+--
+Beefsteak and onions
+60 lbs fresh beef, 2 lbs fat, and 20 lbs sliced onions
+--
+Beef brains
+25 lbs beef brains, 5 lbs diced bacon, and 8 lbs onions
+--
+Beef brains and eggs
+20 lbs beef brains, 50 eggs, and 3 lbs bacon
+--
+Creamed Chicken
+60 lbs chicken, 10 lbs veal, 12 eggs, 2 cans pimento, 4 lbs flour, 10 cans milk, and 2 lbs butter
+--
+Chicken fricassee
+70 lbs chicken, 4 lbs flour, 8 cans milk, and 2 lbs butter
+--
+Fried Chicken
+75 lbs chicken, 4 cans milk, 12 eggs, 4 lbs cracker meal, 10 lbs fat, and bread crumbs
+--
+Chicken roast
+75 lbs chicken, 15 lbs bread crumbs, 4 lbs onions, 2 lbs flour, and 2 lbs fat
+--
+Dumplings
+9 lbs flour and 3 ounces salt
+--
+Chilli con carne
+30 lbs meat scraps, 4 cloves garlic, 2 oz chili powder, 6 oz chili peppers, 2 cans tomatoes, 8 lbs chili beans, and 2 gallons beef stock
+--
+Chuck steak with onions
+60 lbs chuck steak, 3 pounds fat, and 25 lbs onions
+--
+Baked Ham
+50 lbs smoked ham
+--
+Simmered Ham
+50 lbs smoked ham
+--
+Smothered Ham
+50 lbs ham and 5 lbs breadcrumbs
+--
+Liver and bacon
+30 lbs beef liver, 10 lbs onions, 10 lbs bacon, and 2 lbs flour
+--
+Simmered Mutton
+45 lbs mutton, 3 ounces salt, and 1 ounce pepper
+--
+Mutton chops
+45 lbs mutton loin
+--
+Mutton stew
+35 lbs mutton, 40 lbs potatoes, and 7 lbs onions
