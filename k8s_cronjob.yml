@@ -3,7 +3,7 @@ kind: CronJob
 metadata:
   name: armycookbot
 spec:
-  schedule: "0 15 * * *"
+  schedule: "0 15 */2 * *"
   jobTemplate:
     spec:
       template:
