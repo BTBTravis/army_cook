@@ -10,7 +10,12 @@ spec:
         spec:
           containers:
           - name: armycookbot
-            image: registry.gitlab.com/btbtravis/army-cook:0.0.3
+            image: registry.gitlab.com/btbtravis/army-cook:0.0.6.alpha.1
+            volumeMounts:
+            - name: master-txt-volume
+              mountPath: /txts/master
+            - name: sayings-txt-volume
+              mountPath: /txts/sayings
             env:
             - name: CONSUMER_KEY
               valueFrom:
@@ -32,4 +37,16 @@ spec:
                 configMapKeyRef:
                   key: ACCESS_TOKEN_SECRET
                   name: armycook-config
+            - name: ORIGIN_DATE
+              valueFrom:
+                configMapKeyRef:
+                  key: ORIGIN_DATE
+                  name: armycook-config
           restartPolicy: Never
+          volumes:
+          - name: master-txt-volume
+            configMap:
+              name: master-txt
+          - name: sayings-txt-volume
+            configMap:
+              name: sayings-txt

@@ -21,7 +21,7 @@ def cli():
 def get_latest_tweet():
     api = get_twitter_api()
     tweets = api.home_timeline()
-    return tweets[0].text
+    return (tweets[0].text if len(tweets) > 0 else "")
 
 def get_twitter_api():
     auth = tweepy.OAuthHandler(os.environ['CONSUMER_KEY'], os.environ['CONSUMER_SECRET'])
@@ -38,6 +38,7 @@ def get_new_tweet():
     og_date = datetime.datetime(og_date_parts[0], og_date_parts[1], og_date_parts[2])
     now = datetime.datetime.now()
     delta = now - og_date
+    click.echo('Delta Days:' + str(delta.days))
     return get_tweets(delta.days)[delta.days]
 
 def get_tweets(sd):
@@ -60,7 +61,10 @@ def get_tweet(txt, sayingFn):
 
 def load_master_txt():
     """Load file containing text parts to be used in tweet"""
-    txt_file  = open("/txts/master/master.txt", "r")
+    if(os.environ.get('DEV_ENV', '') is "1"):
+        txt_file = open("../master.txt", "r")
+    else:
+        txt_file  = open("/txts/master/master.txt", "r")
     txt = txt_file.read()
     txt_parts = txt.split('--')
     split_on_newline = lambda l: l.split("\n")
@@ -77,7 +81,10 @@ def load_master_txt():
 
 def load_sayings():
     """Load txt file containing sayings part of the tweet"""
-    txt_file  = open("/army/sayings.txt", "r")
+    if(os.environ.get('DEV_ENV', '') is "1"):
+        txt_file  = open("../sayings.txt", "r")
+    else:
+        txt_file  = open("/txts/sayings/sayings.txt", "r")
     txt = txt_file.read()
     txt_parts = txt.split("\n")
     txt_parts = list(filter(lambda x: len(x) > 0, txt_parts))

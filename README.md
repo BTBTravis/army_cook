@@ -17,10 +17,19 @@ Army Cook Bot
 ## License
 * see [LICENSE](https://github.com/BTBTravis/army_cook/blob/master/LICENCE.md) file
 
-## Current Version
+## Version history
+* [v0.0.6.alpha.1](https://github.com/BTBTravis/army_cook/releases/tag/v0.0.5)
+  Up and running with master.txt and sayings.txt in config maps
 * [v0.0.4](https://github.com/BTBTravis/army_cook/releases/tag/v0.0.3)
 
 ## Dev
+**Run locally**
+
+1. get the correct version of python running, `$ pipenv shell`
+1. then install the app to local, `$ pip install --editable .`
+1. then run app with, `$ ORIGIN_DATE="2019,8,30" DEV_ENV=1 armycook`
+1. simply update code and rerun while in dev
+
 **Update master.txt k8s config map:**
 `$ kubectl create configmap master-txt --from-file ./master.txt --namespace armycook`
 
